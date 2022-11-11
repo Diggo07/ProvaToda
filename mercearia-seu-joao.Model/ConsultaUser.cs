@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using 
 
 namespace mercearia_seu_joao.Model
 {
@@ -12,7 +11,7 @@ namespace mercearia_seu_joao.Model
     {
          public static bool ConsultarUser(string nome, string email, string senha, string tipoUsuario)
         {
-            var conexao = new MySqlConnection(ConexaoBD.Conection.ConnectionString);
+            var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             UsuarioBD usuario = null;
 
             try
