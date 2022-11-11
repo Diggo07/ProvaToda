@@ -9,7 +9,7 @@ namespace mercearia_seu_joao.Model
 {
     public class ConsultaUser
     {
-         public static bool ConsultarUser(string nome, string email, string senha, string tipoUsuario)
+         public static bool ConsultarUser(string email, string senha, string tipoUsuario)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
             UsuarioBD usuario = null;
