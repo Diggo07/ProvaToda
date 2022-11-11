@@ -1,0 +1,57 @@
+﻿<Window x:Class="mercearia_seu_joao.View.TelaUsuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mercearia_seu_joao.View"
+        mc:Ignorable="d"
+        Title="GerenciarUsuario" Height="450" Width="800">
+    <Grid Background="#FFFFE1E1">
+        <TextBlock x:Name="txtID" HorizontalAlignment="Left" Height="21" Margin="58,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" Foreground="#FF0004FF"><Run Language="pt-br" Text="ID"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <TextBox x:Name="campoID" HorizontalAlignment="Left" Height="21" Margin="54,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBlock x:Name="txtNome" HorizontalAlignment="Left" Height="21" Margin="58,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Foreground="#FF0004FF"><Run Text="N"/><Run Language="pt-br" Text="ome"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="campoNome" HorizontalAlignment="Left" Height="21" Margin="57,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="0"/>
+        <TextBlock x:Name="txtSenha" HorizontalAlignment="Left" Height="20" Margin="58,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Foreground="#FF0004FF"><Run Language="pt-br" Text="Senha"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <TextBox x:Name="campoSenha" HorizontalAlignment="Left" Height="21" Margin="57,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBlock x:Name="txtEmail" HorizontalAlignment="Left" Height="20" Margin="58,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="34" Foreground="#FF0004FF"><Run Language="pt-br" Text="E-mail"/></TextBlock>
+        <TextBox x:Name="campoEmail" HorizontalAlignment="Left" Height="21" Margin="57,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBlock x:Name="txtFornecedor" HorizontalAlignment="Left" Height="20" Margin="58,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Foreground="#FF0004FF"><Run Language="pt-br" Text="Confirma Senha"/></TextBlock>
+        <TextBox x:Name="campoConfirmarSenha" HorizontalAlignment="Left" Height="20" Margin="57,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Height="27" Margin="57,384,0,0" VerticalAlignment="Top" Width="187" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickLimparUsua" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Height="27" Margin="155,321,0,0" VerticalAlignment="Top" Width="89" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickAlterarUsua" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Height="27" Margin="58,352,0,0" VerticalAlignment="Top" Width="186" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickExcluirUsua" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnNovo" Content="Novo" HorizontalAlignment="Left" Height="27" Margin="58,321,0,0" VerticalAlignment="Top" Width="89" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickNovoUsua" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock x:Name="txtID_Copy" HorizontalAlignment="Left" Height="21" Margin="160,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" Foreground="#FF0004FF"><Run Text="Tipo de Usu"/><Run Language="pt-br" Text="á"/><Run Text="rio"/></TextBlock>
+        <ComboBox x:Name="boxTipoUsua" HorizontalAlignment="Left" Height="21" Margin="160,99,0,0" VerticalAlignment="Top" Width="114" Background="White" BorderBrush="#FF0027FF" Foreground="White">
+            <ComboBoxItem Content="Gerente"/>
+        </ComboBox>
+        <DataGrid HorizontalAlignment="Left" Height="352" Margin="303,59,0,0" VerticalAlignment="Top" Width="489" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Image x:Name="imgGatinho" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="114" Source="/gatopequeno.png" Stretch="Uniform" Margin="0,10,0,0"/>
+        <TextBlock x:Name="txtSeuJoao" HorizontalAlignment="Left" Height="24" Margin="78,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="22" FontFamily="Arial Black" TextAlignment="Center" Foreground="#FF1702FA"><Run Language="pt-br" Text="Seu João da Mercearia"/></TextBlock>
+
+    </Grid>
+</Window>

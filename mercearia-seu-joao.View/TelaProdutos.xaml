@@ -1,0 +1,54 @@
+﻿<Window x:Class="mercearia_seu_joao.View.TelaProdutos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mercearia_seu_joao.View"
+        mc:Ignorable="d"
+        Title="Gerenciar Produtos" Height="470" Width="810
+        ">
+    <Grid Background="#FFFFE1E1">
+        <TextBlock x:Name="txtID" HorizontalAlignment="Left" Height="21" Margin="58,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" Foreground="#FF0004FF"><Run Language="pt-br" Text="ID"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <TextBox x:Name="campoID" HorizontalAlignment="Left" Height="21" Margin="54,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <Image x:Name="imgGatinho" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="114" Source="/gatopequeno.png" Stretch="Uniform" Margin="0,10,0,0"/>
+        <TextBlock x:Name="txtNome" HorizontalAlignment="Left" Height="21" Margin="58,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Foreground="#FF0004FF"><Run Text="N"/><Run Language="pt-br" Text="ome"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="campoNome" HorizontalAlignment="Left" Height="21" Margin="54,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="0"/>
+        <TextBlock x:Name="txtQntd" HorizontalAlignment="Left" Height="20" Margin="58,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Foreground="#FF0004FF"><Run Language="pt-br" Text="Quantidade"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="campoQntd" HorizontalAlignment="Left" Height="21" Margin="54,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBlock x:Name="txtPreco" HorizontalAlignment="Left" Height="20" Margin="143,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Foreground="#FF0004FF"><Run Language="pt-br" Text="Preço Unitário"/><LineBreak/><Run Language="pt-br"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="campoPreco" HorizontalAlignment="Left" Height="21" Margin="140,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBlock x:Name="txtFornecedor" HorizontalAlignment="Left" Height="20" Margin="58,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Foreground="#FF0004FF"><Run Language="pt-br" Text="Fornecedor"/><LineBreak/><Run Language="pt-br"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="campoFornecedor" HorizontalAlignment="Left" Height="20" Margin="54,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Height="27" Margin="77,326,0,0" VerticalAlignment="Top" Width="132" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickLimpar" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Height="27" Margin="77,358,0,0" VerticalAlignment="Top" Width="132" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickAlterar" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Height="27" Margin="78,390,0,0" VerticalAlignment="Top" Width="132" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickExcluir" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnNovo" Content="Novo" HorizontalAlignment="Left" Height="27" Margin="77,294,0,0" VerticalAlignment="Top" Width="132" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickNovo" Background="#FF1702FA">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="362" Margin="289,65,0,0" VerticalAlignment="Top" Width="489" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBlock x:Name="txtSeuJoao" HorizontalAlignment="Left" Height="24" Margin="78,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="22" FontFamily="Arial Black" TextAlignment="Center" Foreground="#FF1702FA"><Run Language="pt-br" Text="Seu João da Mercearia"/></TextBlock>
+
+    </Grid>
+</Window>
