@@ -24,7 +24,6 @@ namespace mercearia_seu_joao.Model
                 while (leitura.Read())
                 {
                     usuario = new UsuarioBD();
-                    email = inserir_email.Text;
                 }
             }
             catch(Exception e)
@@ -38,7 +37,7 @@ namespace mercearia_seu_joao.Model
                     conexao.Close();
                 }
             }
-            return existe;
+            return true;
         }
     }
 }
