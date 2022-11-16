@@ -8,7 +8,7 @@
         Title="Gerenciar Produtos" Height="480" Width="820">
     <Grid Background="#FFFFE1E1">
         <TextBlock x:Name="txtID" HorizontalAlignment="Left" Height="21" Margin="58,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" Foreground="#FF0004FF"><Run Language="pt-br" Text="ID"/><LineBreak/><Run Language="pt-br"/></TextBlock>
-        <TextBox x:Name="txtIdProduto" HorizontalAlignment="Left" Height="21" Margin="54,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBox x:Name="txtIdProduto" HorizontalAlignment="Left" Height="21" Margin="54,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" BorderBrush="#FF0027FF" SelectionOpacity="50" IsReadOnly="True"/>
         <Image x:Name="imgGatinho" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="114" Source="/gatopequeno.png" Stretch="Uniform" Margin="0,10,0,0"/>
         <TextBlock x:Name="txtNome" HorizontalAlignment="Left" Height="21" Margin="58,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Foreground="#FF0004FF"><Run Text="N"/><Run Language="pt-br" Text="ome"/><LineBreak/><Run/></TextBlock>
         <TextBox x:Name="txtNomeProduto" HorizontalAlignment="Left" Height="21" Margin="54,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="0"/>
