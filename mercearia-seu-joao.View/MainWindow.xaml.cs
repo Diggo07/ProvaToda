@@ -37,7 +37,7 @@ namespace mercearia_seu_joao.View
             MessageBox.Show("Contate o seu Gerente!", "Informação", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
-        /*private void VerificarUsuario()
+        private void VerificarUsuario()
         {
             if(inserir_email.Text == usuario.email)
             {
