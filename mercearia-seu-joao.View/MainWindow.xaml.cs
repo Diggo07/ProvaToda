@@ -30,19 +30,27 @@ namespace mercearia_seu_joao.View
         private void EntrarMenu(object sender, MouseButtonEventArgs e)
         {
             VerificarUsuario();
-            var frmTelaMenu = new Window1();
-            frmTelaMenu.Show();
-            Close();
         }
-        
+
         private void EsquecerSenha(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("Contate o seu Gerente!", "Informação", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
-        private void VerificarUsuario()
+        /*private void VerificarUsuario()
         {
-           
+            if(inserir_email.Text == usuario.email)
+            {
+                var frmTelaMenu = new Window1();
+                frmTelaMenu.Show();
+                Close();
+            }
+
+            else
+            {
+                MessageBox.Show("Contate o seu Gerente!", "Informação", MessageBoxButton.OK, MessageBoxImage.Information);
+                LimparCampos();
+            }
         }
 
         private void LimparCampos()
