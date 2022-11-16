@@ -49,10 +49,15 @@ namespace mercearia_seu_joao.View
             if (campoIDVenda.Text == "")
             {
                 campoIDVenda.IsReadOnly = true;
+                campoNomeVenda.IsReadOnly = true;
+                campoQntdVenda.IsReadOnly = true;
+                campoPrecoTotal.IsReadOnly = true;
             }
             else
             {
-                campoIDVenda.IsReadOnly = false;
+                campoQntdVenda.IsReadOnly = false;
+                campoNomeVenda.IsReadOnly = true;
+                campoPrecoTotal.IsReadOnly = true;
             }
         }
 
