@@ -15,7 +15,7 @@ namespace mercearia_seu_joao.Model
             {
                 return new MySqlConnectionStringBuilder
                 {
-                    Server = "192.168.56.1",
+                    Server = "127.0.0.1",
                     UserID = "root",
                     Password = "",
                     Database = "mercearia"

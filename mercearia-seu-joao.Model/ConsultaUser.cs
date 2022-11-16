@@ -9,7 +9,7 @@ namespace mercearia_seu_joao.Model
 {
     public class ConsultaUser
     {
-         public static bool ConsultarUser(string email, string senha, string tipoUsuario)
+         public static void ConsultarUser(string email, string senha)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
 
@@ -32,7 +32,6 @@ namespace mercearia_seu_joao.Model
                     conexao.Close();
                 }
             }
-            return true;
         }
     }
 }
