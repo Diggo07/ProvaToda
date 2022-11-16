@@ -9,16 +9,16 @@
         ">
     <Grid Background="#FFFFE1E1">
         <TextBlock x:Name="txtID" HorizontalAlignment="Left" Height="21" Margin="58,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" Foreground="#FF0004FF"><Run Language="pt-br" Text="ID"/><LineBreak/><Run Language="pt-br"/></TextBlock>
-        <TextBox x:Name="campoID" HorizontalAlignment="Left" Height="21" Margin="54,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBox x:Name="txtIdProduto" HorizontalAlignment="Left" Height="21" Margin="54,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
         <Image x:Name="imgGatinho" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="114" Source="/gatopequeno.png" Stretch="Uniform" Margin="0,10,0,0"/>
         <TextBlock x:Name="txtNome" HorizontalAlignment="Left" Height="21" Margin="58,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Foreground="#FF0004FF"><Run Text="N"/><Run Language="pt-br" Text="ome"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="campoNome" HorizontalAlignment="Left" Height="21" Margin="54,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="0"/>
+        <TextBox x:Name="txtNomeProduto" HorizontalAlignment="Left" Height="21" Margin="54,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="0"/>
         <TextBlock x:Name="txtQntd" HorizontalAlignment="Left" Height="20" Margin="58,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Foreground="#FF0004FF"><Run Language="pt-br" Text="Quantidade"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="campoQntd" HorizontalAlignment="Left" Height="21" Margin="54,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBox x:Name="txtQntd1" HorizontalAlignment="Left" Height="21" Margin="54,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
         <TextBlock x:Name="txtPreco" HorizontalAlignment="Left" Height="20" Margin="143,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Foreground="#FF0004FF"><Run Language="pt-br" Text="Preço Unitário"/><LineBreak/><Run Language="pt-br"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="campoPreco" HorizontalAlignment="Left" Height="21" Margin="140,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBox x:Name="txtPreco1" HorizontalAlignment="Left" Height="21" Margin="140,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
         <TextBlock x:Name="txtFornecedor" HorizontalAlignment="Left" Height="20" Margin="58,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Foreground="#FF0004FF"><Run Language="pt-br" Text="Fornecedor"/><LineBreak/><Run Language="pt-br"/><LineBreak/><Run/></TextBlock>
-        <TextBox x:Name="campoFornecedor" HorizontalAlignment="Left" Height="20" Margin="54,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
+        <TextBox x:Name="txtFornecedor1" HorizontalAlignment="Left" Height="20" Margin="54,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" BorderBrush="#FF0027FF" SelectionOpacity="50"/>
         <Button x:Name="btnLimpar" Content="Limpar" HorizontalAlignment="Left" Height="27" Margin="77,326,0,0" VerticalAlignment="Top" Width="132" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontFamily="Arial Black" Click="ClickLimpar" Background="#FF1702FA">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -47,7 +47,16 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="362" Margin="289,65,0,0" VerticalAlignment="Top" Width="489" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DataGrid x:Name="dataGridProdutos" HorizontalAlignment="Left" Height="362" Margin="289,65,0,0" VerticalAlignment="Top" Width="489" MouseDoubleClick="PegarItemNoGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding id}" Header="Id" />
+                <DataGridTextColumn Binding="{Binding nome}" Header="Nome"/>
+                <DataGridTextColumn Binding="{Binding qnt}" Header="Quantidade"/>
+                <DataGridTextColumn Binding="{Binding preco}" Header="Preço"/>
+                <DataGridTextColumn Binding="{Binding fornecedor}" Header="Fornecedor"/>
+                <DataGridTextColumn/>
+            </DataGrid.Columns>
+        </DataGrid>
         <TextBlock x:Name="txtSeuJoao" HorizontalAlignment="Left" Height="24" Margin="78,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="22" FontFamily="Arial Black" TextAlignment="Center" Foreground="#FF1702FA"><Run Language="pt-br" Text="Seu João da Mercearia"/></TextBlock>
 
     </Grid>
