@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="Vender Produto" Height="450" Width="800">
+        Title="Vender Produto" Height="460" Width="820">
     <Grid Background="#FFFFE1E1">
         <Image x:Name="imgGatinho" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="114" Source="/gatopequeno.png" Stretch="Uniform" Margin="0,10,0,0"/>
         <TextBlock x:Name="txtSeuJoao" HorizontalAlignment="Left" Height="24" Margin="78,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="22" FontFamily="Arial Black" TextAlignment="Center" Foreground="#FF1702FA"><Run Language="pt-br" Text="Seu João da Mercearia"/></TextBlock>

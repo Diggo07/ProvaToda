@@ -27,7 +27,7 @@ namespace mercearia_seu_joao.View
         public void DataDeHoje()
         {
             string diadehoje = DateTime.Now.ToString(" d MMMM 'de' yyyy");
-            txtOlaUsuario.Text = $"Olá Fulano, hoje é dia {diadehoje}";
+            txtOlaUsuario.Text = $"Olá, hoje é dia {diadehoje}";
         }
 
 

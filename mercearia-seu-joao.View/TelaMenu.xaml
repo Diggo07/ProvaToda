@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800">
+        Title="Menu" Height="460" Width="820">
     <Grid Background="#FFFFE1E1">
         <Image x:Name="imgGato" HorizontalAlignment="Left" Height="128" Margin="10,277,0,0" VerticalAlignment="Top" Width="177" Source="/gatopequeno.png" Stretch="Uniform"/>
-        <TextBlock x:Name="txtOlaUsuario" HorizontalAlignment="Left" Height="36" Margin="0,378,0,0" TextWrapping="Wrap" Text="Olá Fulano, hoje é dia (data)" VerticalAlignment="Top" Width="511" FontSize="24" FontFamily="Arial Rounded MT Bold" TextAlignment="Left"/>
+        <TextBlock x:Name="txtOlaUsuario" HorizontalAlignment="Center" Height="36" Margin="0,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="800" FontSize="24" FontFamily="Arial Rounded MT Bold" TextAlignment="Left"/>
         <TextBlock x:Name="txtSeuJoao" HorizontalAlignment="Center" Height="52" Margin="0,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="606" FontSize="45" FontFamily="Arial Black" TextAlignment="Center" Foreground="#FF1702FA"><Run Language="pt-br" Text="Seu João da Mercearia"/></TextBlock>
         <Button x:Name="btnProdutos" Content="Produtos" HorizontalAlignment="Left" Height="61" Margin="69,0,0,0" VerticalAlignment="Center" Width="178" BorderBrush="{x:Null}" Foreground="White" FontSize="22" FontFamily="Arial Black" Click="ClickProdutos" Background="#FF1702FA">
             <Button.Resources>

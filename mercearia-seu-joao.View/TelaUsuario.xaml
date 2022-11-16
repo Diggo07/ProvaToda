@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="GerenciarUsuario" Height="450" Width="800">
+        Title="GerenciarUsuario" Height="460" Width="820">
     <Grid Background="#FFFFE1E1">
         <TextBlock x:Name="txtID" HorizontalAlignment="Left" Height="21" Margin="58,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="14" Foreground="#FF0004FF"><Run Language="pt-br" Text="ID"/><LineBreak/><Run Language="pt-br"/></TextBlock>
         <TextBox x:Name="campoID" HorizontalAlignment="Left" Height="21" Margin="54,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" BorderBrush="#FF0027FF" SelectionOpacity="50"/>

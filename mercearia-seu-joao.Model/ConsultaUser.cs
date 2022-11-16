@@ -12,7 +12,6 @@ namespace mercearia_seu_joao.Model
          public static bool ConsultarUser(string email, string senha, string tipoUsuario)
         {
             var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-            UsuarioBD usuario = null;
 
             try
             {
@@ -20,10 +19,7 @@ namespace mercearia_seu_joao.Model
                 var comando = conexao.CreateCommand();
                 comando.CommandText = @"SELECT * FROM Usuario WHERE email = @email AND senha = @senha";
                 var leitura = comando.ExecuteReader();
-                while (leitura.Read())
-                {
-                    usuario = new UsuarioBD();
-                }
+                
             }
             catch(Exception e)
             {

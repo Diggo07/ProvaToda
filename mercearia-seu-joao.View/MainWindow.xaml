@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mercearia_seu_joao.View"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="Login" Height="460" Width="800">
     <Grid Background="#FFFFE1E1">
 
         <Image HorizontalAlignment="Left" Height="322" Margin="-2,45,0,0" VerticalAlignment="Top" Width="322" Source="/Logo rosa gato fofo (2).png" OpacityMask="#FF1A1A1A"/>
