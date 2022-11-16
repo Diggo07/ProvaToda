@@ -46,8 +46,9 @@
             </Button.Resources>
         </Button>
         <TextBlock x:Name="txtID_Copy" HorizontalAlignment="Left" Height="21" Margin="160,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" Foreground="#FF0004FF"><Run Text="Tipo de Usu"/><Run Language="pt-br" Text="á"/><Run Text="rio"/></TextBlock>
-        <ComboBox x:Name="boxTipoUsua" HorizontalAlignment="Left" Height="21" Margin="160,99,0,0" VerticalAlignment="Top" Width="114" Background="White" BorderBrush="#FF0027FF" Foreground="White">
-            <ComboBoxItem Content="Gerente"/>
+        <ComboBox x:Name="boxTipoUsua" HorizontalAlignment="Left" Height="21" Margin="160,99,0,0" VerticalAlignment="Top" Width="114" Background="White" BorderBrush="#FF0027FF" Foreground="#FF0800FF">
+            <ComboBoxItem Content="Gerente" Foreground="#FF0800FF"/>
+            <ComboBoxItem Content="Caixa" Foreground="#FF0800FF"/>
         </ComboBox>
         <DataGrid HorizontalAlignment="Left" Height="352" Margin="303,59,0,0" VerticalAlignment="Top" Width="489" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <Image x:Name="imgGatinho" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="114" Source="/gatopequeno.png" Stretch="Uniform" Margin="0,10,0,0"/>
